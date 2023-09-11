@@ -13,4 +13,7 @@ export class AppComponent {
   GetData(data:any){
     console.log(data);
   }
+  itemdisabled=false;
+  color='red';
+  fontsize='50px'
 }

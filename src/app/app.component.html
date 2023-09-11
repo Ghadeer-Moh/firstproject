@@ -8,17 +8,17 @@
 <!--<app-login></app-login>-->
 <!--<app-register></app-register>-->
 
-<h1 (mouseover)="GetData('ANGULAR')">{{title}}</h1>
-<button class="btn btn-primary" (click)="GetData(1000)">Click me</button>
-<br>
-<button class="btn btn-primary" (click)="GetData('Angular')">Click me</button>
-<br>
-<br>
-<input (keyup)="GetData('ANGULAR')" placeholder="Enter the text">
-<br>
-<input (keydown)="GetData('ANGULAR')" placeholder="Enter the text">
-<br>
-<input #name (blur)="GetData(name.value)" placeholder="Enter the text">
+
+<!--<button class="btn btn-primary" (click)="GetData(1000)">Click me</button>-->
+<!--<br>-->
+<!--<button class="btn btn-primary" (click)="GetData('Angular')">Click me</button>-->
+<!--<br>-->
+<!--<br>-->
+<!--<input (keyup)="GetData('ANGULAR')" placeholder="Enter the text">-->
+<!--<br>-->
+<!--<input (keydown)="GetData('ANGULAR')" placeholder="Enter the text">-->
+<!--<br>-->
+<!--<input #name (blur)="GetData(name.value)" placeholder="Enter the text">-->
 <!--<h2>The ares of square is {{length * length}}</h2>-->
 <!--<h2>The ares of rectangular is {{length * b}}</h2>-->
 <!--<h2>{{length>b}}</h2>-->
@@ -31,12 +31,7 @@
 <!--<app-statues></app-statues>-->
 
 
-<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
-<!-- * * * * * * * * * * * The content below * * * * * * * * * * * -->
-<!-- * * * * * * * * * * is only a placeholder * * * * * * * * * * -->
-<!-- * * * * * * * * * * and can be replaced. * * * * * * * * * * * -->
-<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
-<!-- * * * * * * * * * Delete the template below * * * * * * * * * * -->
-<!-- * * * * * * * to get started with your project! * * * * * * * * -->
-<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
-
+<h1 [style.color]="color" [style.font-size]="fontsize" (mouseover)="GetData('ANGULAR')">{{title}}</h1>
+<input [disabled]="itemdisabled">
+<br>
+<input disabled="{{itemdisabled}}">
