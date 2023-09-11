@@ -4,6 +4,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
 
 import {AppRoutingModule} from "./app-routing.module";
+import { Test1Component } from './test1/test1.component';
 
 
 
@@ -11,6 +12,7 @@ import {AppRoutingModule} from "./app-routing.module";
 @NgModule({
   declarations: [
     AppComponent,
+    Test1Component,
 
 
 

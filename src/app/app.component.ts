@@ -7,13 +7,5 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Welcome to my First App ^-^';
-  length =100;
-  b = 50;
 
-  GetData(data:any){
-    console.log(data);
-  }
-  itemdisabled=false;
-  color='red';
-  fontsize='50px'
 }
