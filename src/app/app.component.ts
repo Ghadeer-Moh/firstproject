@@ -9,4 +9,8 @@ export class AppComponent {
   title = 'Welcome to my First App ^-^';
   length =100;
   b = 50;
+
+  GetData(data:any){
+    console.log(data);
+  }
 }
