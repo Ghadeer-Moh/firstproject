@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import {MasterService} from "./service/master.service";
+
 
 
 @Component({
@@ -8,20 +8,12 @@ import {MasterService} from "./service/master.service";
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'bootapp';
-  userlist:any;
-  emplist:any;
 
 
 
-  constructor( private service:MasterService)
+
+  constructor( )
   {
-    this.userlist = this.service.GetUserData();
-
-    this.service.GetUserDetails().subscribe(result=>{
-      this.emplist = result;
-      console.log(this.emplist);
-    });
 
   }
 

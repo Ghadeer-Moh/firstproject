@@ -62,34 +62,37 @@
 <!--</ul>-->
 
 
-<h1>Welcom to our program</h1>
-<app-popup></app-popup>
+<!--<h1>Welcom to our program</h1>-->
+<!--<app-popup></app-popup>-->
 
-<table style="width: 50%" class="table, th, td">
-  <thead>
-  <th>Name</th>
-  <th>Mark</th>
-  </thead>
-  <tbody>
-  <tr *ngFor="let item of userlist">
-    <td>{{item.Name}}</td>
-    <td>{{item.Mark}}</td>
-  </tr>
-  </tbody>
-</table>
+<!--<table style="width: 50%" class="table, th, td">-->
+<!--  <thead>-->
+<!--  <th>Name</th>-->
+<!--  <th>Mark</th>-->
+<!--  </thead>-->
+<!--  <tbody>-->
+<!--  <tr *ngFor="let item of userlist">-->
+<!--    <td>{{item.Name}}</td>-->
+<!--    <td>{{item.Mark}}</td>-->
+<!--  </tr>-->
+<!--  </tbody>-->
+<!--</table>-->
 
-<ul>
-  <li *ngFor="let item of emplist">
-    {{item.name}} - ({{item.id}})
-  </li>
+<!--<ul>-->
+<!--  <li *ngFor="let item of emplist">-->
+<!--    {{item.name}} - ({{item.id}})-->
+<!--  </li>-->
 
-</ul>
+<!--</ul>-->
+
+<!--<router-outlet></router-outlet>-->
+
+
+
+<app-home></app-home>
+<app-about></app-about>
+<app-admin></app-admin>
+<app-user></app-user>
 
 <router-outlet></router-outlet>
-
-
-
-
-
-
 
