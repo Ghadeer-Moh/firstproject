@@ -1,0 +1,20 @@
+<ng-template #content let-modal>
+  <div class="modal-header">
+    <h4 class="modal-title" id="modal-basic-title">Create New Record</h4>
+    <button type="button" class="btn-close" aria-label="Close" (click)="modal-dimiss('Cross click')"></button>
+  </div>
+  <div class="modal-body">
+    <div class="mb-3">
+      <label for="name">Name</label>
+      <div class="input-group">
+        <input #name class="form-control">
+      </div>
+    </div>
+
+  </div>
+
+<div class="model-footer">
+  <button type="button" class="btn btn-outline-dark" (click)="savedata(name.value)"> Save</button>
+</div>
+<button ngTooltip="create new record" class="btn btn-primary" (click)="open(content)" >Add New</button>
+</ng-template>

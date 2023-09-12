@@ -35,34 +35,57 @@
 <!--<input [disabled]="itemdisabled">-->
 <!--<br>-->
 <!--<input disabled="{{itemdisabled}}">-->
-<h1 *ngIf="isspecial">{{title}}</h1>
-<h1 appFontchange>{{title}}</h1>
-<h2 [ngClass]="isspecial?classname:''">Testing with Ngclass</h2>
-<br>
-<h2 class="{{classname}}">Testing with Ngclass</h2>
-<h2 [ngStyle]="style">Testing Ngstyle</h2>
+<!--<h1 *ngIf="isspecial">{{title}}</h1>-->
+<!--<h1 appFontchange>{{title}}</h1>-->
+<!--<h2 [ngClass]="isspecial?classname:''">Testing with Ngclass</h2>-->
+<!--<br>-->
+<!--<h2 class="{{classname}}">Testing with Ngclass</h2>-->
+<!--<h2 [ngStyle]="style">Testing Ngstyle</h2>-->
 
-<input (change)="datachange()" [ngModel]="inputvalue"/>
+<!--<input (change)="datachange()" [ngModel]="inputvalue"/>-->
+
+<!--<ul>-->
+<!--  <li *ngFor="let item of country">{{item}}</li>-->
+<!--</ul>-->
+
+<!--<ul *ngFor="let  item of people" [ngSwitch]="item.country">-->
+<!--  <li *ngSwitchCase="'Yemen'" class="text-success">-->
+<!--    {{item.name}}{{item.country}}-->
+<!--  </li>-->
+<!--  <li *ngSwitchCase="'Aden'" class="text-warning">-->
+<!--    {{item.name}}{{item.country}}-->
+<!--  </li>-->
+<!--  <li *ngSwitchDefault class="text-primary">-->
+<!--    {{item.name}}{{item.country}}-->
+<!--  </li>-->
+
+<!--</ul>-->
+
+
+<h1>Welcom to our program</h1>
+<app-popup></app-popup>
+
+<table style="width: 50%" class="table, th, td">
+  <thead>
+  <th>Name</th>
+  <th>Mark</th>
+  </thead>
+  <tbody>
+  <tr *ngFor="let item of userlist">
+    <td>{{item.Name}}</td>
+    <td>{{item.Mark}}</td>
+  </tr>
+  </tbody>
+</table>
 
 <ul>
-  <li *ngFor="let item of country">{{item}}</li>
-</ul>
-
-<ul *ngFor="let  item of people" [ngSwitch]="item.country">
-  <li *ngSwitchCase="'Yemen'" class="text-success">
-    {{item.name}}{{item.country}}
-  </li>
-  <li *ngSwitchCase="'Aden'" class="text-warning">
-    {{item.name}}{{item.country}}
-  </li>
-  <li *ngSwitchDefault class="text-primary">
-    {{item.name}}{{item.country}}
+  <li *ngFor="let item of emplist">
+    {{item.name}} - ({{item.id}})
   </li>
 
 </ul>
 
-
-
+<router-outlet></router-outlet>
 
 
 

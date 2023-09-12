@@ -6,23 +6,22 @@ import { AppComponent } from './app.component';
 import {AppRoutingModule} from "./app-routing.module";
 import {FormsModule} from "@angular/forms";
 import { FontchangeDirective } from './direct/fontchange.directive';
+import { PopupComponent } from './popup/popup.component';
+import {HttpClientModule} from "@angular/common/http";
 
 
 @NgModule({
   declarations: [
     AppComponent,
     FontchangeDirective,
-
-
-
-
+    PopupComponent,
 
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
-
+    FormsModule,
+    HttpClientModule
 
   ],
   providers: [],

@@ -5,3 +5,6 @@ h1{
 .special{
   color: chocolate;
 }
+table, th, td{
+  border: 1px solid black;
+}
