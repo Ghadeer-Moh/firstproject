@@ -35,5 +35,38 @@
 <!--<input [disabled]="itemdisabled">-->
 <!--<br>-->
 <!--<input disabled="{{itemdisabled}}">-->
-<h1>{{title}}</h1>
-<app-test1></app-test1>
+<h1 *ngIf="isspecial">{{title}}</h1>
+<h1 appFontchange>{{title}}</h1>
+<h2 [ngClass]="isspecial?classname:''">Testing with Ngclass</h2>
+<br>
+<h2 class="{{classname}}">Testing with Ngclass</h2>
+<h2 [ngStyle]="style">Testing Ngstyle</h2>
+
+<input (change)="datachange()" [ngModel]="inputvalue"/>
+
+<ul>
+  <li *ngFor="let item of country">{{item}}</li>
+</ul>
+
+<ul *ngFor="let  item of people" [ngSwitch]="item.country">
+  <li *ngSwitchCase="'Yemen'" class="text-success">
+    {{item.name}}{{item.country}}
+  </li>
+  <li *ngSwitchCase="'Aden'" class="text-warning">
+    {{item.name}}{{item.country}}
+  </li>
+  <li *ngSwitchDefault class="text-primary">
+    {{item.name}}{{item.country}}
+  </li>
+
+</ul>
+
+
+
+
+
+
+
+
+
+

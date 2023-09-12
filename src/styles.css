@@ -2,3 +2,12 @@ h1{
   font-weight: bold;
   color: darkred;
 }
+.text-success{
+  color: green;
+}
+.text-primary{
+  color: blue;
+}
+.text-warning{
+  color: yellow;
+}

@@ -4,15 +4,15 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
 
 import {AppRoutingModule} from "./app-routing.module";
-import { Test1Component } from './test1/test1.component';
-
-
+import {FormsModule} from "@angular/forms";
+import { FontchangeDirective } from './direct/fontchange.directive';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    Test1Component,
+    FontchangeDirective,
+
 
 
 
@@ -20,7 +20,8 @@ import { Test1Component } from './test1/test1.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
 
 
   ],
