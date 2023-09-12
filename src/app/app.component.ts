@@ -11,20 +11,12 @@ export class AppComponent {
   title = 'bootapp';
   userlist:any;
   emplist:any;
-//   classname='special';
-//   isspecial=true;
-//   inputvalue='test';
-//   country=['Yemen', 'Aden' , 'Egypt','Turkish']
-//
-//   style={
-//     'font-style' : 'italic' ,
-//     'color' : 'blue'
-//
-// }
+
+
+
   constructor( private service:MasterService)
   {
     this.userlist = this.service.GetUserData();
-    // console.log(this.userlist);
 
     this.service.GetUserDetails().subscribe(result=>{
       this.emplist = result;
@@ -32,26 +24,6 @@ export class AppComponent {
     });
 
   }
-  // datachange(){
-  //   console.log(this.inputvalue)
-  // }
-  // people :any[]=[
-  //   {
-  //     "name" :"Ghadeer Mohammed",
-  //     "age": 25,
-  //     "country" : "Yemen"
-  //   },
-  //   {
-  //     "name" :"Ali Mohammed",
-  //     "age": 44,
-  //     "country" : "Aden"
-  //   },
-  //   {
-  //     "name" :"Mohammed Mohammed",
-  //     "age": 80,
-  //     "country" : "Turkish"
-  //   },
-  // ];
 
 
 
